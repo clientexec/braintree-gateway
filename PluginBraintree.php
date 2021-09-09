@@ -412,7 +412,7 @@ class PluginBraintree extends GatewayPlugin
                             <label>'.$this->user->lang("We do not store credit card information for your selected payment type").'</label><br/>
                             <br/>
                             <div id="dropin-container"></div>
-                            <button class="btn btn-default" id="pay-button" disabled>'.$this->user->lang("Pay Invoice").'</button>
+                            <button class="btn btn-default" id="pay-button">'.$this->user->lang("Pay Invoice").'</button>
                         </div>
                         <script>
                             var paybutton = document.querySelector("#pay-button");';
