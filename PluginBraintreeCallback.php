@@ -6,6 +6,11 @@ class PluginBraintreeCallback extends PluginCallback
 {
     function processCallback()
     {
+        // Execute PluginCallback::processCallback() first
+        if (!parent::processCallback()) {
+            return;
+        }
+
         if (isset($_POST['braintree_action']) && !empty($_POST['braintree_action'])) {
             $braintree_action = $_POST['braintree_action'];
 
